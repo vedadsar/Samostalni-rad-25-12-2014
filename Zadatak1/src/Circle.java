@@ -19,8 +19,8 @@ public class Circle {
 	private int speedX;			// Brzina kruga po X osi
 	private int speedY;			// Brzina kruga po Y osi
 	private Dimension windowDimension;	// Dimenzije prozora unutar kojeg se krug krece
-	private int centerX;		//X koordinata centra kruga	
-	private int centerY;		//Y koordinata centra kruga	
+	private int centerX ;		//X koordinata centra kruga	
+	private int centerY ;		//Y koordinata centra kruga	
 	private int halfRadius;		//Poluprecnik kruga.
 
 	/**
@@ -35,7 +35,7 @@ public class Circle {
 		this.radius = radius;
 		this.isFilled = isFilled;
 		this.color = color;
-		this.speedX = speedX;
+		this.speedX = speedX;			
 		this.speedY = speedY;
 		this.windowDimension = windowDimension;
 		this.centerX = x + radius / 2;	// Koordinate X u centru
@@ -74,6 +74,8 @@ public class Circle {
 
 		x = x + speedX; 	// Pomjera koordinate po x osi, s brzinom speedX
 		y = y + speedY;		// Pomjera koordinate po Y osi, sa brzinom speedY
+		centerX = centerX + speedX;
+		centerY = centerY + speedY;
 	}
 
 	/**

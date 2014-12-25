@@ -4,6 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 /**
@@ -33,6 +34,7 @@ public class BouncingBallsPlay extends JPanel{
 		window.setSize(500, 500);  				  // 
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 	
 		window.setResizable(false);
+		JLabel pointsCounter = new JLabel("Your points");
 		
 		// Kreiramo 'objekat' bouncing balls
 		BouncingBalls drawingPanel = new BouncingBalls(window.getSize());
